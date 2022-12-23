@@ -1,0 +1,1 @@
+turtle.pensize(5)

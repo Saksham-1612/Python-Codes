@@ -1,0 +1,11 @@
+import sqlite3
+con = sqlite3.connect("K21W.db")
+con.cursor()
+cur = con.cursor()
+# res = cur.execute("Create Table python1 (rollno,name,marks)")
+# res1 = cur.execute("SELECT * from sqlite_master")
+# print(res1)
+# cur.execute("INSERT INTO students values(1,'ABC',34),(2,'CDE',43)")
+con.commit()
+res = cur.execute("SELECT name ,marks FROM students")
+print(res.fetchall())

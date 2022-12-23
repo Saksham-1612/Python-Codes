@@ -1,0 +1,5 @@
+def newline():
+    print()
+
+
+newline()
